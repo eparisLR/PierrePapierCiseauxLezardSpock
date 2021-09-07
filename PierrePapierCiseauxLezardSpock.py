@@ -1,7 +1,6 @@
 import random
-end = False
 
-while end == False:
+while True:
     liste_choices = ["Pierre", "Papier", "Ciseaux", "Lézard", "Spock"]
 
     def choice_user():
@@ -10,8 +9,7 @@ while end == False:
             print("Veuillez entrer un nombre entre 1 et 5 !")
             user= input(" 1: Pierre \n 2: Papier \n 3: Ciseaux \n 4: Lézard \n 5: Spock \n >>>>> Choix : ")
         if user == "6":
-            end = True
-            return end
+            return False
 
         else:
             choice= liste_choices[int(user)-1]
@@ -24,7 +22,7 @@ while end == False:
         return computer
 
     user_choice = choice_user()
-    if user_choice != True:
+    if user_choice != False:
         index_user = liste_choices.index(user_choice)
         computer_choice = choice_computer(index_user)
         index_computer = liste_choices.index(computer_choice)
