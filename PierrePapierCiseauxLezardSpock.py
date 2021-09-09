@@ -33,7 +33,7 @@ while True:
     user_choice = choice_user()
 
     if user_choice != False:
-        #Je récupère les index et, les choix de l'utilisateur et, d'un ordinateur.
+        #Je récupère les index et, les choix de l'utilisateur et, de l'ordinateur.
         #Je lis mon dictionnaire avec les index des choix utilisateur et, ordinateur.
         #En fonction de si c'est True ou False je print le message correspondant.
         index_user = liste_choices.index(user_choice)
